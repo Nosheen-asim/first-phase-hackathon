@@ -1,0 +1,235 @@
+# OpenAPI Specification for Isaac AI Brain Educational Content
+
+openapi: 3.0.0
+info:
+  title: Isaac AI Brain Educational Content API
+  description: API for accessing educational content about NVIDIA Isaac for AI-powered robotics, perception, navigation, and humanoid robots
+  version: 1.0.0
+
+paths:
+  /modules:
+    get:
+      summary: List all educational modules
+      responses:
+        '200':
+          description: List of available modules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Module'
+
+  /modules/{moduleId}:
+    get:
+      summary: Get details of a specific module
+      parameters:
+        - name: moduleId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Module details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Module'
+
+  /modules/{moduleId}/chapters:
+    get:
+      summary: List chapters in a specific module
+      parameters:
+        - name: moduleId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of chapters in the module
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Chapter'
+
+  /modules/{moduleId}/chapters/{chapterId}:
+    get:
+      summary: Get content of a specific chapter
+      parameters:
+        - name: moduleId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: chapterId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Chapter content
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Chapter'
+
+  /modules/{moduleId}/chapters/{chapterId}/topics:
+    get:
+      summary: List topics in a specific chapter
+      parameters:
+        - name: moduleId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: chapterId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of topics in the chapter
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Topic'
+
+components:
+  schemas:
+    Module:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the module
+        title:
+          type: string
+          description: Title of the module
+        description:
+          type: string
+          description: Brief description of the module
+        duration:
+          type: integer
+          description: Estimated time to complete in minutes
+        difficulty:
+          type: string
+          enum: [beginner, intermediate, advanced]
+          description: Difficulty level
+        learningObjectives:
+          type: array
+          items:
+            type: string
+          description: What students will learn
+        chapters:
+          type: array
+          items:
+            $ref: '#/components/schemas/Chapter'
+
+    Chapter:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the chapter
+        title:
+          type: string
+          description: Title of the chapter
+        content:
+          type: string
+          description: Chapter content in Markdown format
+        learningObjectives:
+          type: array
+          items:
+            type: string
+          description: Learning objectives for this chapter
+        prerequisites:
+          type: array
+          items:
+            type: string
+          description: Prerequisites for this chapter
+        duration:
+          type: integer
+          description: Estimated time to complete in minutes
+        difficulty:
+          type: string
+          enum: [beginner, intermediate, advanced]
+          description: Difficulty level
+        order:
+          type: integer
+          description: Order of the chapter in the module
+        topics:
+          type: array
+          items:
+            $ref: '#/components/schemas/Topic'
+
+    Topic:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the topic
+        title:
+          type: string
+          description: Title of the topic
+        content:
+          type: string
+          description: Topic content in Markdown format
+        examples:
+          type: array
+          items:
+            $ref: '#/components/schemas/Example'
+        concepts:
+          type: array
+          items:
+            $ref: '#/components/schemas/Concept'
+        order:
+          type: integer
+          description: Order of the topic in the chapter
+
+    Example:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the example
+        title:
+          type: string
+          description: Title of the example
+        description:
+          type: string
+          description: What the example demonstrates
+        code:
+          type: string
+          description: Minimal code example
+        explanation:
+          type: string
+          description: Explanation of the example
+
+    Concept:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the concept
+        name:
+          type: string
+          description: Name of the concept
+        definition:
+          type: string
+          description: Clear definition of the concept
+        explanation:
+          type: string
+          description: Detailed explanation of the concept
+        relatedConcepts:
+          type: array
+          items:
+            type: string
+          description: IDs of related concepts

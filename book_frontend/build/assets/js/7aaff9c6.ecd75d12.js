@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkbook_frontend=globalThis.webpackChunkbook_frontend||[]).push([[14],{9898(o){o.exports=JSON.parse('{"metadata":{"permalink":"/first-phase-hackathon/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

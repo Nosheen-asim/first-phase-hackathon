@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-username.github.io/first-phase-hackathon/blog</id>
+    <title>Physical AI &amp; Humanoid Robotics Blog</title>
+    <updated>2025-01-02T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-username.github.io/first-phase-hackathon/blog"/>
+    <subtitle>Physical AI &amp; Humanoid Robotics Blog</subtitle>
+    <icon>https://your-username.github.io/first-phase-hackathon/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Understanding Vision-Language-Action Systems in Robotics]]></title>
+        <id>https://your-username.github.io/first-phase-hackathon/blog/understanding-vision-language-action-systems</id>
+        <link href="https://your-username.github.io/first-phase-hackathon/blog/understanding-vision-language-action-systems"/>
+        <updated>2025-01-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Vision-Language-Action (VLA) systems represent a significant advancement in robotics, enabling robots to understand natural language commands and execute complex tasks in real-world environments.]]></summary>
+        <content type="html"><![CDATA[<p>Vision-Language-Action (VLA) systems represent a significant advancement in robotics, enabling robots to understand natural language commands and execute complex tasks in real-world environments.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-vla-framework">The VLA Framework<a href="https://your-username.github.io/first-phase-hackathon/blog/understanding-vision-language-action-systems#the-vla-framework" class="hash-link" aria-label="Direct link to The VLA Framework" title="Direct link to The VLA Framework" translate="no">​</a></h2>
+<p>The VLA framework integrates three critical components:</p>
+<ul>
+<li class=""><strong>Vision</strong>: Processing visual input from the environment</li>
+<li class=""><strong>Language</strong>: Understanding natural language commands</li>
+<li class=""><strong>Action</strong>: Executing appropriate robotic behaviors</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-applications">Key Applications<a href="https://your-username.github.io/first-phase-hackathon/blog/understanding-vision-language-action-systems#key-applications" class="hash-link" aria-label="Direct link to Key Applications" title="Direct link to Key Applications" translate="no">​</a></h2>
+<p>VLA systems are revolutionizing how we interact with robots:</p>
+<ul>
+<li class=""><strong>Assistive Robotics</strong>: Helping elderly or disabled individuals with daily tasks</li>
+<li class=""><strong>Industrial Automation</strong>: Enabling more flexible and intuitive robot programming</li>
+<li class=""><strong>Service Robotics</strong>: Providing natural human-robot interaction in service environments</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="implementation-challenges">Implementation Challenges<a href="https://your-username.github.io/first-phase-hackathon/blog/understanding-vision-language-action-systems#implementation-challenges" class="hash-link" aria-label="Direct link to Implementation Challenges" title="Direct link to Implementation Challenges" translate="no">​</a></h2>
+<p>Developing effective VLA systems involves addressing several challenges:</p>
+<ul>
+<li class=""><strong>Perception Accuracy</strong>: Ensuring robust understanding of visual scenes</li>
+<li class=""><strong>Language Understanding</strong>: Interpreting ambiguous or complex commands</li>
+<li class=""><strong>Action Planning</strong>: Coordinating complex sequences of robotic behaviors</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="future-directions">Future Directions<a href="https://your-username.github.io/first-phase-hackathon/blog/understanding-vision-language-action-systems#future-directions" class="hash-link" aria-label="Direct link to Future Directions" title="Direct link to Future Directions" translate="no">​</a></h2>
+<p>As VLA systems continue to evolve, we can expect even more sophisticated human-robot collaboration in various domains, from healthcare to manufacturing.</p>]]></content>
+        <author>
+            <name>Admin Team</name>
+            <uri>https://github.com/your-username</uri>
+        </author>
+        <category label="vla" term="vla"/>
+        <category label="robotics" term="robotics"/>
+        <category label="ai" term="ai"/>
+        <category label="perception" term="perception"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome to Physical AI & Humanoid Robotics Blog]]></title>
+        <id>https://your-username.github.io/first-phase-hackathon/blog/welcome-to-physical-ai-blog</id>
+        <link href="https://your-username.github.io/first-phase-hackathon/blog/welcome-to-physical-ai-blog"/>
+        <updated>2025-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to our educational blog focused on the fascinating intersection of artificial intelligence and embodied robotic systems. This blog will feature insights, tutorials, and updates on the latest developments in humanoid robotics, AI perception, and human-robot interaction.]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to our educational blog focused on the fascinating intersection of artificial intelligence and embodied robotic systems. This blog will feature insights, tutorials, and updates on the latest developments in humanoid robotics, AI perception, and human-robot interaction.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-to-expect">What to Expect<a href="https://your-username.github.io/first-phase-hackathon/blog/welcome-to-physical-ai-blog#what-to-expect" class="hash-link" aria-label="Direct link to What to Expect" title="Direct link to What to Expect" translate="no">​</a></h2>
+<p>In this blog, you'll find:</p>
+<ul>
+<li class=""><strong>Technical Tutorials</strong>: Step-by-step guides on implementing robotics concepts</li>
+<li class=""><strong>Research Insights</strong>: Analysis of cutting-edge research in physical AI</li>
+<li class=""><strong>Project Updates</strong>: Progress on our educational curriculum and tools</li>
+<li class=""><strong>Industry News</strong>: Latest developments in humanoid robotics</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting Started<a href="https://your-username.github.io/first-phase-hackathon/blog/welcome-to-physical-ai-blog#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<p>Whether you're a student, researcher, or enthusiast, this blog aims to provide valuable content that bridges the gap between theoretical AI concepts and practical robotic implementations.</p>
+<p>Stay tuned for our upcoming posts on ROS 2 integration, digital twin technologies, and vision-language-action systems for robotics.</p>]]></content>
+        <author>
+            <name>Admin Team</name>
+            <uri>https://github.com/your-username</uri>
+        </author>
+        <category label="welcome" term="welcome"/>
+        <category label="robotics" term="robotics"/>
+        <category label="ai" term="ai"/>
+    </entry>
+</feed>
