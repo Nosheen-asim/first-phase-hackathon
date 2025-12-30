@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io',
+  url: 'https://nosheen-asim.github.io/first-phase-hackathon/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages, this is usually '/<projectName>/'
   baseUrl: '/',
